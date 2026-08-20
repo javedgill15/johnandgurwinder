@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John &amp; Gurwinder Real Estate Group | exp Realty</title>
+  <meta name="description" content="John Gill and Gurwinder Gill, REALTORS® with exp Realty, serving Abbotsford, Burnaby, Coquitlam, Delta, Langley, Maple Ridge, Richmond, Surrey and Vancouver." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">John &amp; Gurwinder <span>Real Estate Group</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="has-dropdown">
+          <button aria-haspopup="true">About <span class="caret">&#9662;</span></button>
+          <ul class="dropdown">
+            <li><a href="about.html#john">Meet John</a></li>
+            <li><a href="about.html#gurwinder">Meet Gurwinder</a></li>
+            <li><a href="about.html#testimonials">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <button aria-haspopup="true">Listings <span class="caret">&#9662;</span></button>
+          <ul class="dropdown">
+            <li><a href="listings.html#featured">Featured Listings</a></li>
+            <li><a href="listings.html#our-listings">Our Listings</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" data-idx-search-all>Property Search</a></li>
+
+        <li class="has-dropdown">
+          <button aria-haspopup="true">Resources <span class="caret">&#9662;</span></button>
+          <ul class="dropdown">
+            <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+            <li><a href="sellers-guide.html">Seller's Guide</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="contact.html#home-finder">Home Finder</a></li>
+            <li><a href="contact.html#home-evaluation">Home Evaluation</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Let's Talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============================== HERO =============================== -->
+  <section class="hero">
+    <div class="hero-placeholder-img" role="img" aria-label="[PLACEHOLDER — replace with a full-bleed photo of John and Gurwinder]"></div>
+    <div class="container hero-content">
+      <span class="eyebrow">exp Realty &middot; Metro Vancouver &amp; Fraser Valley</span>
+      <h1>Real estate, guided by people who know your neighborhood.</h1>
+      <p>John Gill and Gurwinder Gill help buyers and sellers navigate every step of the process across Metro Vancouver and the Fraser Valley &mdash; with local knowledge, honest advice, and a team that actually picks up the phone.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" data-idx-search-all>Find My Dream Home</a>
+        <a href="contact.html#home-evaluation" class="btn btn-outline-light">How Much Is My Home Worth?</a>
+      </div>
+      <div class="hero-cities">Serving Abbotsford &bull; Burnaby &bull; Coquitlam &bull; Delta &bull; Langley &bull; Maple Ridge &bull; Richmond &bull; Surrey &bull; Vancouver</div>
+    </div>
+  </section>
+
+  <!-- ========================== MEET THE TEAM ========================== -->
+  <section id="team">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Meet the Team</span>
+        <h2>Two agents. One standard of service.</h2>
+        <p>John and Gurwinder bring complementary strengths and a shared commitment to putting clients first.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo">[PLACEHOLDER — photo of John Gill]</div>
+          <div class="team-info">
+            <h3>John Gill</h3>
+            <div class="role">REALTOR&reg; &middot; exp Realty</div>
+            <p class="bio"><span class="placeholder-tag">Placeholder</span><br />[PLACEHOLDER — replace with John's real bio]</p>
+            <a href="about.html#john" class="btn btn-secondary btn-sm">Full Bio</a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">[PLACEHOLDER — photo of Gurwinder Gill]</div>
+          <div class="team-info">
+            <h3>Gurwinder Gill</h3>
+            <div class="role">REALTOR&reg; &middot; exp Realty</div>
+            <p class="bio"><span class="placeholder-tag">Placeholder</span><br />[PLACEHOLDER — replace with Gurwinder's real bio]</p>
+            <a href="about.html#gurwinder" class="btn btn-secondary btn-sm">Full Bio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== NEIGHBORHOODS ========================== -->
+  <section id="neighborhoods" style="background: var(--color-cream-100);">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Where We Work</span>
+        <h2>Explore listings by neighborhood</h2>
+        <p>Click a city to view active listings in that area, powered by our exp Realty search.</p>
+      </div>
+
+      <div class="city-grid" data-city-grid></div>
+    </div>
+  </section>
+
+  <!-- ========================= FEATURED LISTINGS ========================= -->
+  <section id="featured-listings">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Featured Listings</span>
+        <h2>A sample of what's on the market</h2>
+        <p><span class="placeholder-tag">Placeholder</span> Real, live listings are powered by our exp Realty IDX feed — these cards show the layout only.</p>
+      </div>
+
+      <div class="listings-grid">
+        <div class="listing-card">
+          <div class="listing-photo">
+            <span class="listing-status">Active</span>
+            [PLACEHOLDER — listing photo]
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$1,249,000</div>
+            <div class="listing-address">[PLACEHOLDER address], Surrey, BC</div>
+            <div class="listing-meta"><span><strong>4</strong> beds</span><span><strong>3</strong> baths</span><span><strong>2,340</strong> sqft</span></div>
+            <a href="#" class="btn btn-secondary btn-sm btn-block" data-idx-search-all>View Listing</a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <div class="listing-photo">
+            <span class="listing-status">Active</span>
+            [PLACEHOLDER — listing photo]
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$899,900</div>
+            <div class="listing-address">[PLACEHOLDER address], Langley, BC</div>
+            <div class="listing-meta"><span><strong>3</strong> beds</span><span><strong>2</strong> baths</span><span><strong>1,610</strong> sqft</span></div>
+            <a href="#" class="btn btn-secondary btn-sm btn-block" data-idx-search-all>View Listing</a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <div class="listing-photo">
+            <span class="listing-status">New</span>
+            [PLACEHOLDER — listing photo]
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$2,180,000</div>
+            <div class="listing-address">[PLACEHOLDER address], Vancouver, BC</div>
+            <div class="listing-meta"><span><strong>5</strong> beds</span><span><strong>4</strong> baths</span><span><strong>3,120</strong> sqft</span></div>
+            <a href="#" class="btn btn-secondary btn-sm btn-block" data-idx-search-all>View Listing</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 48px;">
+        <a href="listings.html" class="btn btn-primary">View All Listings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA BAND ============================ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="section-heading light">
+        <span class="eyebrow">How Can We Help?</span>
+        <h2>Whatever stage you're at, we've got you</h2>
+      </div>
+
+      <div class="cta-grid">
+        <div class="cta-card">
+          <h3>How Much Is My Home Worth?</h3>
+          <p>Get a free, no-obligation home evaluation from John and Gurwinder.</p>
+          <a href="contact.html#home-evaluation" class="btn btn-light btn-sm">Get My Home Value</a>
+        </div>
+        <div class="cta-card">
+          <h3>Find My Dream Home</h3>
+          <p>Search active listings across Metro Vancouver and the Fraser Valley.</p>
+          <a href="#" class="btn btn-light btn-sm" data-idx-search-all>Start Searching</a>
+        </div>
+        <div class="cta-card">
+          <h3>Talk to the Team</h3>
+          <p>Have a question about buying or selling? Reach out any time.</p>
+          <a href="contact.html" class="btn btn-light btn-sm">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== TESTIMONIALS ========================== -->
+  <section class="testimonial-section" id="testimonials-home">
+    <div class="container">
+      <div class="section-heading light">
+        <span class="eyebrow">Client Stories</span>
+        <h2>What clients say</h2>
+        <p><span class="placeholder-tag">Placeholder</span> To be replaced with real client testimonials.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">[PLACEHOLDER — replace with real testimonial]</p>
+          <div class="testimonial-author">Client Name<span>[PLACEHOLDER — City]</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">[PLACEHOLDER — replace with real testimonial]</p>
+          <div class="testimonial-author">Client Name<span>[PLACEHOLDER — City]</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">[PLACEHOLDER — replace with real testimonial]</p>
+          <div class="testimonial-author">Client Name<span>[PLACEHOLDER — City]</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ NEWSLETTER =========================== -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <h2>Stay in the loop</h2>
+        <p>New listings, market updates, and local tips — straight to your inbox.</p>
+      </div>
+      <!-- TODO: connect to lead capture -->
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" class="form-input" placeholder="Your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">John &amp; Gurwinder <span>Real Estate Group</span></a>
+          <p>John Gill &amp; Gurwinder Gill, REALTORS&reg; with exp Realty, serving Metro Vancouver and the Fraser Valley.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="#" data-idx-search-all>Property Search</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+            <li><a href="sellers-guide.html">Seller's Guide</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="contact.html#home-evaluation">Home Evaluation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul>
+            <li>Abbotsford &middot; Burnaby &middot; Coquitlam</li>
+            <li>Delta &middot; Langley &middot; Maple Ridge</li>
+            <li>Richmond &middot; Surrey &middot; Vancouver</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> John &amp; Gurwinder Real Estate Group. exp Realty. All rights reserved.</span>
+        <span>[PLACEHOLDER — brokerage address / license info]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
