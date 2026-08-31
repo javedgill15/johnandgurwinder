@@ -15,15 +15,15 @@ const EXP_REALTY_TYPES = [1, 2, 3, 4, 10, 31];
 // Service area list — city name plus the exact area_keyword value the
 // current site uses in its exp Realty links (spaces become "+").
 const SERVICE_AREAS = [
-  { name: "Abbotsford", keyword: "ABBOTSFORD" },
-  { name: "Burnaby", keyword: "BURNABY" },
-  { name: "Coquitlam", keyword: "COQUITLAM" },
-  { name: "Delta", keyword: "DELTA" },
-  { name: "Langley", keyword: "LANGLEY" },
-  { name: "Maple Ridge", keyword: "MAPLE+RIDGE" },
-  { name: "Richmond", keyword: "RICHMOND" },
-  { name: "Surrey", keyword: "SURREY" },
-  { name: "Vancouver", keyword: "VANCOUVER" },
+  { name: "Abbotsford", keyword: "ABBOTSFORD", image: "images/neighborhood-abbotsford.jpg" },
+  { name: "Burnaby", keyword: "BURNABY", image: "images/neighborhood-burnaby.jpg" },
+  { name: "Coquitlam", keyword: "COQUITLAM", image: "images/neighborhood-coquitlam.jpg" },
+  { name: "Delta", keyword: "DELTA", image: "images/neighborhood-delta.jpg" },
+  { name: "Langley", keyword: "LANGLEY", image: "images/neighborhood-langley.jpg" },
+  { name: "Maple Ridge", keyword: "MAPLE+RIDGE", image: "images/neighborhood-maple-ridge.jpg" },
+  { name: "Richmond", keyword: "RICHMOND", image: "images/neighborhood-richmond.jpg" },
+  { name: "Surrey", keyword: "SURREY", image: "images/neighborhood-surrey.jpg" },
+  { name: "Vancouver", keyword: "VANCOUVER", image: "images/neighborhood-vancouver.jpg" },
 ];
 
 /**
@@ -56,7 +56,7 @@ function renderCityGrid() {
   grids.forEach((grid) => {
     const html = SERVICE_AREAS.map(
       (area) => `
-      <a class="city-tile" href="${buildCitySearchUrl(area.keyword)}" target="_self">
+      <a class="city-tile" href="${buildCitySearchUrl(area.keyword)}" target="_self" style="background-image: url('${area.image}');">
         <span>${area.name}</span>
       </a>`
     ).join("");

@@ -514,7 +514,9 @@ section {
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: linear-gradient(160deg, var(--color-ink-700), var(--color-ink-900));
+  background-color: var(--color-ink-800);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: flex-end;
   padding: 20px;
