@@ -22,14 +22,6 @@
           <ul class="dropdown">
             <li><a href="about.html#john">Meet John</a></li>
             <li><a href="about.html#gurwinder">Meet Gurwinder</a></li>
-            <li><a href="about.html#testimonials">Testimonials</a></li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <button aria-haspopup="true">Listings <span class="caret">&#9662;</span></button>
-          <ul class="dropdown">
-            <li><a href="listings.html#featured">Featured Listings</a></li>
-            <li><a href="listings.html#our-listings">Our Listings</a></li>
           </ul>
         </li>
         <li><a href="#" data-idx-search-all>Property Search</a></li>
@@ -38,9 +30,6 @@
           <ul class="dropdown">
             <li><a href="buyers-guide.html">Buyer's Guide</a></li>
             <li><a href="sellers-guide.html">Seller's Guide</a></li>
-            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li><a href="contact.html#home-finder">Home Finder</a></li>
-            <li><a href="contact.html#home-evaluation">Home Evaluation</a></li>
           </ul>
         </li>
         <li><a href="contact.html">Contact</a></li>
@@ -101,116 +90,6 @@
     </div>
   </section>
 
-  <section id="home-evaluation" style="background: var(--color-cream-100);">
-    <div class="container content-block">
-      <h2>Home Evaluation</h2>
-      <p>Curious what your home is worth in today's market? Tell us a bit about your property and John or Gurwinder will follow up with a free, no-obligation evaluation.</p>
-
-      <!-- TODO: connect to lead capture -->
-      <form class="form-card" action="#" method="post">
-        <div class="form-row">
-          <div class="form-group full">
-            <label for="eval-address">Property Address</label>
-            <input type="text" id="eval-address" name="address" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="eval-city">City</label>
-            <select id="eval-city" name="city">
-              <option>Abbotsford</option>
-              <option>Burnaby</option>
-              <option>Coquitlam</option>
-              <option>Delta</option>
-              <option>Langley</option>
-              <option>Maple Ridge</option>
-              <option>Richmond</option>
-              <option>Surrey</option>
-              <option>Vancouver</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="eval-type">Property Type</label>
-            <select id="eval-type" name="type">
-              <option>Detached House</option>
-              <option>Townhouse</option>
-              <option>Condo / Apartment</option>
-              <option>Duplex</option>
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="eval-name">Full Name</label>
-            <input type="text" id="eval-name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="eval-email">Email</label>
-            <input type="email" id="eval-email" name="email" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="eval-phone">Phone</label>
-            <input type="tel" id="eval-phone" name="phone" />
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Get My Free Home Evaluation</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="home-finder">
-    <div class="container content-block">
-      <h2>Home Finder</h2>
-      <p>Tell us what you're looking for and we'll help match you with homes that fit — before they're even on your radar.</p>
-
-      <!-- TODO: connect to lead capture -->
-      <form class="form-card" action="#" method="post">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="finder-name">Full Name</label>
-            <input type="text" id="finder-name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="finder-email">Email</label>
-            <input type="email" id="finder-email" name="email" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="finder-city">Preferred City / Area</label>
-            <select id="finder-city" name="city">
-              <option>Abbotsford</option>
-              <option>Burnaby</option>
-              <option>Coquitlam</option>
-              <option>Delta</option>
-              <option>Langley</option>
-              <option>Maple Ridge</option>
-              <option>Richmond</option>
-              <option>Surrey</option>
-              <option>Vancouver</option>
-              <option>Open to suggestions</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="finder-budget">Budget Range</label>
-            <input type="text" id="finder-budget" name="budget" placeholder="e.g. $800,000 – $1,000,000" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group full">
-            <label for="finder-notes">What are you looking for?</label>
-            <textarea id="finder-notes" name="notes" placeholder="Beds, baths, property type, must-haves..."></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit My Home Search</button>
-      </form>
-    </div>
-  </section>
-
   <section style="background: var(--color-navy-900); padding: 64px 0;">
     <div class="container">
       <div class="footer-grid" style="margin-bottom: 0; grid-template-columns: 1fr 1fr 1fr;">
@@ -246,7 +125,6 @@
           <h4>Explore</h4>
           <ul>
             <li><a href="about.html">About</a></li>
-            <li><a href="listings.html">Listings</a></li>
             <li><a href="#" data-idx-search-all>Property Search</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -256,8 +134,6 @@
           <ul>
             <li><a href="buyers-guide.html">Buyer's Guide</a></li>
             <li><a href="sellers-guide.html">Seller's Guide</a></li>
-            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li><a href="contact.html#home-evaluation">Home Evaluation</a></li>
           </ul>
         </div>
         <div class="footer-col">

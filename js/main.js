@@ -4,8 +4,8 @@
 
 // IDX / CRM base URL — confirm with John & Gurwinder whether this should
 // stay as gurwindergill.exprealty.com or change to a new agent slug.
-// Every city-search, featured-listing, and "search all listings" link on
-// this site is built from this constant so it only has to be updated here.
+// Every city-search and "search all listings" link on this site is
+// built from this constant so it only has to be updated here.
 const EXP_REALTY_BASE_URL = "https://gurwindergill.exprealty.com";
 
 // Property type codes carried over unchanged from the current
@@ -47,7 +47,7 @@ function buildSearchAllUrl() {
 }
 
 /* --------------------------------------------------------------------------
-   Render city grid tiles (used on index.html and listings.html)
+   Render city grid tiles (used on index.html)
    -------------------------------------------------------------------------- */
 function renderCityGrid() {
   const grids = document.querySelectorAll("[data-city-grid]");
@@ -118,61 +118,6 @@ function initMobileNav() {
 }
 
 /* --------------------------------------------------------------------------
-   Mortgage calculator (mortgage-calculator.html)
-   -------------------------------------------------------------------------- */
-function initMortgageCalculator() {
-  const form = document.querySelector("#mortgage-calc-form");
-  if (!form) return;
-
-  const priceInput = form.querySelector("#calc-price");
-  const downInput = form.querySelector("#calc-down");
-  const rateInput = form.querySelector("#calc-rate");
-  const yearsInput = form.querySelector("#calc-years");
-
-  const monthlyEl = document.querySelector("#calc-monthly");
-  const principalEl = document.querySelector("#calc-principal");
-  const totalInterestEl = document.querySelector("#calc-total-interest");
-  const totalPaidEl = document.querySelector("#calc-total-paid");
-
-  const currency = (n) =>
-    n.toLocaleString("en-CA", { style: "currency", currency: "CAD", maximumFractionDigits: 0 });
-
-  function calculate() {
-    const price = parseFloat(priceInput.value) || 0;
-    const downPct = parseFloat(downInput.value) || 0;
-    const annualRate = parseFloat(rateInput.value) || 0;
-    const years = parseFloat(yearsInput.value) || 0;
-
-    const downAmount = price * (downPct / 100);
-    const principal = Math.max(price - downAmount, 0);
-    const monthlyRate = annualRate / 100 / 12;
-    const numPayments = years * 12;
-
-    let monthlyPayment = 0;
-    if (principal > 0 && numPayments > 0) {
-      if (monthlyRate === 0) {
-        monthlyPayment = principal / numPayments;
-      } else {
-        monthlyPayment =
-          (principal * monthlyRate * Math.pow(1 + monthlyRate, numPayments)) /
-          (Math.pow(1 + monthlyRate, numPayments) - 1);
-      }
-    }
-
-    const totalPaid = monthlyPayment * numPayments;
-    const totalInterest = totalPaid - principal;
-
-    monthlyEl.textContent = currency(monthlyPayment || 0);
-    principalEl.textContent = currency(principal || 0);
-    totalInterestEl.textContent = currency(totalInterest > 0 ? totalInterest : 0);
-    totalPaidEl.textContent = currency(totalPaid > 0 ? totalPaid : 0);
-  }
-
-  form.addEventListener("input", calculate);
-  calculate();
-}
-
-/* --------------------------------------------------------------------------
    Init
    -------------------------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
@@ -180,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   wireSearchAllLinks();
   initStickyNav();
   initMobileNav();
-  initMortgageCalculator();
 
   // Set current year in footer
   const yearEl = document.querySelector("#current-year");
